@@ -40,85 +40,22 @@ button:hover {
 }
 .btn-section {
     display: flex;
-    flex-direction: row;
-    padding: 5px 5px 50px 5px;
-}
-
-.cta-area {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-.primary {
-    background-color: #2a66fe;
-    border-color: #2a66fe;
-}
-
-.secondary {
-    color: #2a66fe;
-    border-color: #2a66fe;
-}
-
-.display {
-
-}
-.secondary-functions {
-    display: flex;
-    gap: 5px;
-}
-
-.secondary-functions .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    border: 1px solid grey;
-    border-radius: 50%;
-    background-color: #9F9F9F;
-}
-
-.primary-functions {
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-}
-
-.primary-functions .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    border: 1px solid rgb(245, 205, 5);
-    border-radius: 50%;
-    background-color: #F69807;
-
-}
-
-.numbers-area {
-    display: flex;
     flex-wrap: wrap;
-    gap: 5px;
-    width: 230px;
+    padding: 5px 10px 50px 10px;
+    gap: 10px;
+    justify-content: center;
+    
 
 }
 
-.numbers-area .btns {
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55px;
     height: 55px;
-    border: 1px solid #313131;
+    border: 1px solid red;
     border-radius: 50%;
-    background-color: #313131;
     color: white;
     font-size: 25px;
-}
-
-.left-num-pad {
-    display: flex;
-    flex-direction: column;
 }
