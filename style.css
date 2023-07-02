@@ -10,6 +10,21 @@ body {
 
 }
 
+.signals {
+    max-width: 60px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.time {
+    color: white;
+    position: absolute;
+    top: 18px;
+    left: 38px;
+    font-size: 12px;
+}
+
 .equation-display {
     
     width: 100%;
@@ -100,4 +115,13 @@ body {
 
 .dark-gray {
     background-color: #313131;
+}
+
+.bottom-bar {
+    width: 85px;
+    border-bottom: 3px solid white;
+    position: absolute;
+    left: 100px;
+    bottom: 16px;
+    border-radius: 50px;
 }
