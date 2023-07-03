@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <title>Funky Calculator</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-
+    <script src="index.js" defer></script>
 </head>
 
 <body>
-    <img src="https://help.apple.com/assets/640A52196275DE31D4371B5E/640A52226275DE31D4371B8B/en_US/91433b868ad67ee9e2a087cca75de95c.png"
-        style="max-width: 300px;" alt="">
+    <!-- <img src="https://help.apple.com/assets/640A52196275DE31D4371B5E/640A52226275DE31D4371B8B/en_US/91433b868ad67ee9e2a087cca75de95c.png"
+        style="max-width: 300px;" alt=""> -->
     <div class="calculator">
 
         <div class="display">
@@ -21,30 +23,38 @@
                 <div class="time">9:41</div>
                 <img class="signals" src="signals.png" alt="">
             </div>
-            <div class="equation-display">54-55x65</div>
-            <div class="result-display">99.60</div>
+            <div class="equation-display" id="equation-display"></div>
+            <div class="result-display" id="result-display">99.60</div>
         </div>
 
         <div class="btn-section">
             <div class="clear btn light-gray">AC</div>
             <div class="plus-minus btn light-gray">+/-</div>
             <div class="percent btn light-gray">%</div>
-            <div class="divide btn orange">÷</div>
-            <div class="btn dark-gray" id="07">7</div>
-            <div class="btn dark-gray" id="08">8</div>
-            <div class="btn dark-gray" id="09">9</div>
-            <div class="multiply btn orange">×</div>
-            <div class="btn dark-gray" id="04">4</div>
-            <div class="btn dark-gray" id="05">5</div>
-            <div class="btn dark-gray" id="06">6</div>
-            <div class="minus btn orange">-</div>
-            <div class="btn dark-gray" id="01">1</div>
-            <div class="btn dark-gray" id="02">2</div>
-            <div class="btn dark-gray" id="03">3</div>
-            <div class="plus btn orange">+</div>
-            <div class="btn zero dark-gray" id="0">0</div>
-            <div class="btn dark-gray" id="dot">.</div>
-            <div class="equal btn orange">=</div>
+            <div class="display-input divide btn orange">÷</div>
+
+            <div class="display-input btn dark-gray" id="07">7</div>
+            <div class="display-input btn dark-gray" id="08">8</div>
+            <div class="display-input btn dark-gray" id="09">9</div>
+
+            <div class="display-input multiply btn orange">×</div>
+
+            <div class="display-input btn dark-gray" id="04">4</div>
+            <div class="display-input btn dark-gray" id="05">5</div>
+            <div class="display-input btn dark-gray" id="06">6</div>
+
+            <div class="display-input minus btn orange">-</div>
+
+            <div class="display-input btn dark-gray" id="01">1</div>
+            <div class="display-input btn dark-gray" id="02">2</div>
+            <div class="display-input btn dark-gray" id="03">3</div>
+
+            <div class="display-input plus btn orange">+</div>
+
+            <div class="display-input btn zero dark-gray" id="0">0</div>
+            <div class="display-input btn dark-gray" id="dot">.</div>
+
+            <div class="display-input equal btn orange">=</div>
         </div>
         <div class="bottom-bar"></div>
 
@@ -53,5 +63,5 @@
 
 
 </body>
-
+<div class="footer">Copyright © 2023 <a href="https://github.com/ahmednabik">ahmednabik</a></div>
 </html>
