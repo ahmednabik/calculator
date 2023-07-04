@@ -48,6 +48,7 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
     padding: 5px 12px;
+    overflow: hidden;
 }
 
 .calculator {
@@ -129,4 +130,11 @@ body {
 .footer {
     position: absolute;
     bottom: 10px;
+}
+
+.disable {
+    pointer-events: none; /* disable click events */
+    opacity: 0.5; /* make the element semi-transparent */
+    filter: grayscale(100%); /* convert the element's color to grayscale */
+    cursor: not-allowed; /* change the cursor on hover */
 }
